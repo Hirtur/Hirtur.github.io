@@ -1,0 +1,84 @@
+ * {
+	box-sizing: border-box;
+}
+body {
+	max-width: 60em;/* = 960px ~ 1080px fartölvuskjár */
+	 margin: 0 auto;
+	 background-color: black;
+}
+/* -- GRID AREA -- hnit */
+.haus {
+	grid-area: haus;
+	text-align: center;
+	color: blue;
+}
+.main {
+	grid-area: main;
+	color: blue;
+}
+.topnav {
+	grid-area: topnav;
+}
+.foot {
+	grid-area: foot;
+}
+/* dálkar í container */
+.as1 {
+	grid-area: as1;
+	border-right: 3px solid blue;
+	border-left: 3px solid blue;
+	border-top: 3px solid blue;
+	border-bottom: 3px solid blue;
+	padding-right: 1em;
+	background-color: grey;
+	color: white;
+
+}
+.as2 {
+	grid-area: as2;
+	border-right: 3px solid blue;
+	border-left: 3px solid blue;
+	border-top: 3px solid blue;
+	border-bottom: 3px solid blue;
+	padding-left: 1em;
+	background-color: grey;
+	color: white;
+}
+.art1 {
+	grid-area: art1;
+	background-color: black;
+	border-right: 3px solid blue;
+	border-left: 3px solid blue;
+	border-top: 3px solid blue;
+	border-bottom: 3px solid blue;
+	color: grey;
+}
+/* -- Grid Template area -- */
+.body {
+	display:grid;
+	grid-template-areas:
+	  "topnav"
+	  "haus"
+	  "main"
+	  "foot"
+}
+/* -- innri tög í main -- */
+.main {
+	display:grid;
+	grid-gap:1em;
+	grid-template-areas:
+	  "as1 art1 as2";
+    grid-template-columns: 1fr 3fr 1fr;
+}
+/* -- flex box --*/
+.topmenu, .footmenu {
+	display:flex;
+	flex-flow:row;
+	justify-content: space-around;
+	margin:0;
+	padding:1em;
+	background-color: #ddd;
+}
+.topmenu li, .footmenu li {
+	list-style-type: none;
+}
