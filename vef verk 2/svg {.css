@@ -1,0 +1,44 @@
+svg {
+    position: relative;
+    animation-name: hringur;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes hringur {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+        background: red;
+    }
+    
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+        background: blue;
+    }
+    50% {
+        transform: rotate(0deg);
+        left: 500px;
+        background: green;
+    }
+    55% {
+        transform: rotate(0deg);
+        left: 500px;
+        background: yellow;
+    }
+    70% {
+        transform: rotate(0deg);
+        left: 500px;
+        background: orange;
+    }
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+        background: pink;
+    } 
+}
+
+
