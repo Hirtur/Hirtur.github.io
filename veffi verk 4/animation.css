@@ -101,7 +101,7 @@ svg {
     position: relative;
     animation-name: hringur;
     animation-duration: 2s;
-    animation-iteration-count: inherit;
+    animation-iteration-count: infinite;
 }
 
 
