@@ -1,0 +1,141 @@
+body {
+    display: grid;
+    justify-content: center;
+}
+
+
+div {
+    width: 400px;
+    height: 400px;
+    border: 0,6 dashed red;
+    overflow: hidden;
+}
+
+
+img{
+    width: 400px;
+    height: 400px;
+}
+
+.auglysing{
+     position: relative;
+     animation: poppastinn;
+     animation-duration: 5s;
+  
+     
+}
+.birtast{
+    animation-name:  dæmi;
+    animation-duration: 2s;
+    animation-timing-function:ease-in ;
+    
+    
+    
+}
+
+.inn {
+    position: relative;
+    animation-name: birtastinn;
+    animation-duration: 3s;
+    left: -50px
+   
+}
+
+.texti {
+    position: relative;
+}
+
+.ut {
+    position: relative;
+    animation-name: kemurinn;
+    animation-duration: 2s;
+    right: +50px;
+}
+
+@keyframes poppastinn {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+
+@keyframes kemurinn{
+    from{left:  +100px;}
+    to{left:  0px;}
+}
+
+@keyframes birtastinn{
+    from{left:  -400px;}
+    to{left:  0px;}
+}
+
+@keyframes dæmi {
+0% {
+    transform: rotate(0deg);
+    left: 0px;
+}
+
+25% {
+    transform: rotate(20deg);
+    left: 0px;
+}
+50% {
+    transform: rotate(0deg);
+    left: 500px;
+}
+55% {
+    transform: rotate(0deg);
+    left: 500px;
+}
+70% {
+    transform: rotate(0deg);
+    left: 500px;
+    background: #1ec7e6;
+}
+100% {
+    transform: rotate(-360deg);
+    left: 0px;
+} 
+}
+
+svg {
+    position: relative;
+    animation-name: hringur;
+    animation-duration: 2s;
+    animation-iteration-count: inherit;
+}
+
+
+
+@keyframes hringur {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+        background: red;
+    }
+    
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+        background: blue;
+    }
+    50% {
+        transform: rotate(0deg);
+        left: 500px;
+        background: green;
+    }
+    55% {
+        transform: rotate(0deg);
+        left: 500px;
+        background: yellow;
+    }
+    70% {
+        transform: rotate(0deg);
+        left: 500px;
+        background: orange;
+    }
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+        background: pink;
+    } 
+}
