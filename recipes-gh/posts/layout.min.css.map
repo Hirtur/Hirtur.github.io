@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,MAAM,AAAC,CACH,OAAO,CAAE,IAAI,CACb,qBAAqB,CAAE,OAAO,CAC9B,QAAQ,CAAE,GAAG,CAChB,AACD,AAAA,MAAM,AAAC,CACH,OAAO,CAAE,IAAI,CACb,qBAAqB,CAAE,WAAW,CAClC,QAAQ,CAAE,GAAG,CAChB",
+    "sources": [
+        "../../Myrecipes-ssg/scss/layout.scss"
+    ],
+    "names": [],
+    "file": "layout.min.css"
+}

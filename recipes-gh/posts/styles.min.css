@@ -1,0 +1,2 @@
+.col-2{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;grid-gap:2em}.col-3{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr;grid-gap:2em}body{background-color:bisque}.container{width:80%;margin:auto;margin-top:3em}.mybutton{background:#f7786b;font-size:0.75em}.card{background-color:#fff;border-radius:.4em;padding:1em}img{max-width:100%;height:auto}.stretch{display:-ms-grid;display:grid;-ms-grid-column-align:stretch;justify-self:stretch}
+/*# sourceMappingURL=styles.min.css.map */
