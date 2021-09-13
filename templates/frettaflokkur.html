@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Fréttir</h2>
+
+    {% for i in f1 %}
+        {% if flokkur ==i['flokkur'] %}
+            <a href="/frett/{{ i['id'] }}">{{ i['fyrirsogn'] }}</a><br><br>
+        {% endif %}
+    {% endfor %}
+
+[% endblock %]

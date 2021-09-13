@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="style.css">
+{% endblock %}
+
+{% block content %}
+
+    <h2>{{ frett['fyrirsogn']}}</h2>
+    {{ frett['meginmal']}}<br>
+    Höfundur: {{ frett['hofundur']}}
+
+{% endblock %} 
