@@ -1,0 +1,42 @@
+body {
+    box-sizing: border-box;
+    padding: 13px;
+    margin: 0;
+    height: auto;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.banners{
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 13px;
+    margin-top: 8px;
+}
+
+nav{
+    text-align: center;
+    display: block;
+    padding: 13px;
+    border: 2px;
+    border-bottom: auto;
+    }
+    
+.banner{
+    text-align: left;
+    display: block;
+    padding: 13px;
+}
+
+img{
+    width: 100%;
+}
+
