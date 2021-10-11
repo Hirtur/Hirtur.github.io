@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+<title>frettir</title>
+
+{% block content %}
+
+<div class="page-header">
+  <link rel="stylesheet" href="/static/stylesheets/styles.css">
+</div>
+
+<header>
+    <nav><h1>Lönd</h1>
+        <a href="/">Lönd</a>
+        <a href="/heimsalfur/Africa">Afríka</a> 
+        <a href="/heimsalfur/Asia">Asía</a> 
+        <a href="/heimsalfur/Americas">Ameríka</a>
+        <a href="/heimsalfur/Europe">Evrópa</a> 
+        <a href="/heimsalfur/Oceania">Eyjaálfa</a>
+        <a href="/heimsalfur/Polar">Suðurskautslandið</a>
+    </nav>
+</header>
+<main>
+    <main>
+        <div class = "banner">
+            <h2>Lönd</h2>
+            {% for i in lf %}
+            <a href="/land/{{ i ['alpha2Code'] }}"> {{ i ['name'] }} </a> <br><br>
+            {% endfor %}
+        </div>
+
+        </section>
+    </main>
+</main>
+<footer>
+    <div>
+        <h2>Hjörtur Elí Einarsson</h2>
+        <h3>hjortureli13@gmail.com</h3>
+</footer>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
