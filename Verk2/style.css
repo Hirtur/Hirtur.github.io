@@ -1,0 +1,19 @@
+
+img{
+    width: 100%;
+}
+
+
+.einhvad{
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 15px;
+    margin-top: 8px;
+}
+.einhvat{
+    text-align: left;
+    display: block;
+    padding: 17px;
+}

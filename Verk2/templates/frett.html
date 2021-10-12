@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="style.css">
+{% endblock %}
+
+{% block content %}
+
+<section class = "einhvad">
+    <div class ="einhvat">
+    <h1>Mynd:</h1>
+    <img src="/static/{{ frett ['mynd'] }}" alt="">
+</div>
+
+<div class = "einhvat"></div>
+    <h2>{{ frett['fyrirsogn']}}</h2>
+    {{ frett['meginmal']}}<br>
+    Höfundur: {{ frett['hofundur']}}
+</div>
+
+</section>
+
+{% endblock %} 
