@@ -1,12 +1,10 @@
 {% extends "base.html" %}
 
-<title>frettir</title>
-
 {% block content %}
 
 <div class="page-header">
-  <link rel="stylesheet" href="styles.css">
-</div>
+    <link rel="stylesheet" href="styles.css">
+  </div>
 
 <header>
     <nav><h1>londinn</h1>
@@ -21,19 +19,17 @@
 </header>
 <main>
     <main>
-        <section class = "einhvad">
-            <div class = "einhvat">
-                <img src= "{{ land ['flag']}}">
-            </div>
+        <div class = "einhvat">
+            <h2>londinn</h2>
+            {% for i in lf %}
+                {% if region == i['region'] %}
+                    <a href="/land/{{ i['alpha2Code'] }}"> {{ i ['name'] }} </a> <br><br>
+                {% endif %}
+            {% endfor %}
+            <h2>{{fjoldi}}</h2>
+        </div>
 
-            <div class = "einhvat">
-                <p> {{ land ['name'] }} </p>
-                <p> {{ land ['capital'] }} </p>
-                <p> {{ land ['region'] }} </p>
-                <p> {{ land ['population'] }} </p>
-            </div>   
         </section>
     </main>
 </main>
 {% endblock %}
-
