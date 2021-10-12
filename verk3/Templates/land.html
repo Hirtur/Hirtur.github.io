@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+<title>frettir</title>
+
+{% block content %}
+
+<div class="page-header">
+  <link rel="stylesheet" href="styles.css">
+</div>
+
+<header>
+    <nav><h1>londinn</h1>
+        <a href="/">londinn</a>
+        <a href="/heimsalfur/America">america</a> 
+        <a href="/heimsalfur/Asia">Asía</a> 
+        <a href="/heimsalfur/Africa">Afrika</a>
+        <a href="/heimsalfur/Ocianic">úthafs</a> 
+        <a href="/heimsalfur/Europe">Evropa</a>
+        <a href="/heimsalfur/Polar">Suðurskauts</a>
+    </nav>
+</header>
+<main>
+    <main>
+        <section class = "einhvad">
+            <div class = "einhvat">
+                <img src= "{{ land ['flag']}}">
+            </div>
+
+            <div class = "einhvat">
+                <p> {{ land ['name'] }} </p>
+                <p> {{ land ['capital'] }} </p>
+                <p> {{ land ['region'] }} </p>
+                <p> {{ land ['population'] }} </p>
+            </div>   
+        </section>
+    </main>
+</main>
+{% endblock %}
+

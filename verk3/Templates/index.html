@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+<title>frettir</title>
+
+{% block content %}
+
+<div class="page-header">
+  <link rel="stylesheet" href="styles.css">
+</div>
+
+<header>
+    <nav><h1>londinn</h1>
+        <a href="/">londinn</a>
+        <a href="/heimsalfur/America">america</a> 
+        <a href="/heimsalfur/Asia">Asía</a> 
+        <a href="/heimsalfur/Africa">Afrika</a>
+        <a href="/heimsalfur/Ocianic">úthafs</a> 
+        <a href="/heimsalfur/Europe">Evropa</a>
+        <a href="/heimsalfur/Polar">Suðurskauts</a>
+    </nav>
+</header>
+<main>
+    <main>
+        <div class = "einhvat">
+            <h2>londinn</h2>
+            {% for i in lf %}
+            <a href="/land/{{ i ['alpha2Code'] }}"> {{ i ['name'] }} </a> <br><br>
+            {% endfor %}
+        </div>
+
+        </section>
+    </main>
+</main>
+{% endblock %}
+
