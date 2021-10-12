@@ -10,7 +10,7 @@
 <h4 class="title">Vörur:</h4>
     <section class="selection">
         {% for i in vl %}
-        <section class="vara">
+        <section class="vorur">
             <h3 class="name">{{ i['item'] }}</h3>
             <img src="{{ i['mynd'] }}" alt="img" width="250" height="300" class="img">
             <a href="/add?item={{ i['item'] }}&verd={{ i['verd'] }}">{{ i['verd'] }}</a>
